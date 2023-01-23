@@ -5,7 +5,7 @@ import sys
 
 def run_query(prompt):
     completions = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=prompt,
         max_tokens=1024,
         n=1,
@@ -22,8 +22,11 @@ def main():
     query = sys.argv[1].strip()
     answer = run_query(query) if query else "no query"
     print(answer)
-    exit
 
 
 if __name__ == "__main__":
     main()
+
+
+
+# https://beta.openai.com/docs/models/codex
