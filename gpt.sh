@@ -15,7 +15,7 @@ while true; do
     fi
 
 		echo -e "\n"		
-		response=$(python query.py "$input")
+		response=$(python client.py "$input")
 		echo "${GREEN}$response${RESET}"
 		echo -e "\n"
 done
