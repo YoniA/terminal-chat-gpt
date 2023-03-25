@@ -12,4 +12,4 @@
 
 ### Demo
 
-![demo](./demo.png)
+![demo](demo.PNG)
